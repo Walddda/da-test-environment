@@ -6,7 +6,8 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        I'm an example component. lol KYS <br>
+                        I'm an example component. lol KYS
+                        pls go to /register to register <br>
                         <md-button class="md-primary">KYS BUTTON</md-button>
                     </div>
                 </div>

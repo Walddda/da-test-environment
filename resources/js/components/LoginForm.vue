@@ -1,28 +1,43 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Login Form</div>
+    <div>
+        <form novalidate class="md-layout">
+            <md-card class="md-layout-utem md-size-50 md-small-size-100">
+                <md-card-header>
+                    <div class="md-title">Login</div>
+                </md-card-header>
 
-                    <div class="card-body">
-                        I am the Login Form
-                        <md-button class="md-primary">KYS BUTTON</md-button>
+                <md-card-content>
+                    <div class="md-layout md-gutter">
+                        <div class="md-layout-item md-small-size-100">
+                            <md-field>
+                                <label> User Name </label>
+                                <md-input />
+                            </md-field>
+                        </div>
+
+                        <div class="md-layout-item md-small-size-100">
+                            <md-field>
+                                <label> Password </label>
+                                <md-input v-model="password" type="password"></md-input>
+                            </md-field>
+                        </div>
+
+                        <div>
+                            <md-button class="md-raised md-primary">Login</md-button>
+                        </div>
+
                     </div>
-                </div>
-            </div>
-        </div>
+                </md-card-content>
+            </md-card>
+        </form>
     </div>
 </template>
 
 <script>
-    import Vue from 'vue';
-    import VueMaterial from 'vue-material';
-    Vue.use(VueMaterial);
 
     export default {
         mounted() {
-            console.log('Hi Gab.')
+            
         }
     }
 </script>

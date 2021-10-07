@@ -24,3 +24,14 @@ Route::get('/1', function () {
     return view('greeting', ['name' => 'Adam']);
 });;
 Route::get('/test', [TestController::class, 'show']);
+
+
+// Route for the login form
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/register', function(){
+    return view('register');
+});
+
