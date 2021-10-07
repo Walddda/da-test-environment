@@ -21,6 +21,6 @@ Route::get('/helo', function () {
     return 'Hello World';
 });
 Route::get('/1', function () {
-    return view('greeting', ['name' => 'Finn']);
+    return view('greeting', ['name' => 'Adam']);
 });;
 Route::get('/test', [TestController::class, 'show']);

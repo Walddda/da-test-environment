@@ -3,10 +3,21 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+ 
+ 
+ //Vue.use(VueMaterial)
 
-console.log("hallo");
 
 require('./bootstrap');
+
+import Vue from 'vue';
+
+import VueMaterial from 'vue-material';
+import 'vue-material/dist/vue-material.min.css';
+import 'vue-material/dist/theme/default.css';
+
+Vue.use(VueMaterial);
+
 
 window.Vue = require('vue').default;
 
