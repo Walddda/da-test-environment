@@ -1,11 +1,6 @@
-@push('scripts')
-<script src="{{ mix('/js/app.js') }}"></script>
-@endpush
-
-<div>
-    @foreach($test as $testFall)
-    <div>
-        {{ $testFall->type}}
-    </div>
-    @endforeach
+<div id="app">
+    <example-component></example-component>
+    <h1> Hi </h1>
 </div>
+
+<script src="{{ mix('/js/app.js') }}"></script>
