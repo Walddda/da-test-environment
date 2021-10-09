@@ -23,7 +23,7 @@
                         </div>
 
                         <div>
-                            <md-button class="md-raised md-primary">Login</md-button>
+                            <md-button class="md-raised md-primary">Logina</md-button>
                         </div>
 
                     </div>

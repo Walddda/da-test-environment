@@ -8,16 +8,20 @@
  //Vue.use(VueMaterial)
 
 
-require('./bootstrap');
+require('./bootstrap')
 
-import Vue from 'vue';
+import Vue from 'vue'
 
-import VueMaterial from 'vue-material';
-import 'vue-material/dist/vue-material.min.css';
-import 'vue-material/dist/theme/default.css';
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+import Vuelidate from 'vuelidate'
+import MdVuelidated from '@undecaf/vue-material-vuelidate'
+import '@undecaf/vue-material-vuelidate/dist/components.css'
 
-Vue.use(VueMaterial);
-
+Vue.use(MdVuelidated)
+Vue.use(Vuelidate)
+Vue.use(VueMaterial)
 
 window.Vue = require('vue').default;
 
