@@ -2217,6 +2217,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {}
 });
@@ -38649,7 +38652,11 @@ var render = function() {
                             },
                             expression: "password"
                           }
-                        })
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "md-helper-text" }, [
+                          _vm._v("Please use a safe one")
+                        ])
                       ],
                       1
                     )
@@ -38681,19 +38688,24 @@ var render = function() {
                     )
                   ],
                   1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  [
-                    _c("md-button", { staticClass: "md-raised md-primary" }, [
-                      _vm._v("Register")
-                    ])
-                  ],
-                  1
                 )
               ])
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "md-card-actions",
+              [
+                _c(
+                  "md-button",
+                  {
+                    staticClass: "md-raised md-primary",
+                    attrs: { type: "submit", disabled: _vm.sending }
+                  },
+                  [_vm._v("Create user")]
+                )
+              ],
+              1
+            )
           ],
           1
         )

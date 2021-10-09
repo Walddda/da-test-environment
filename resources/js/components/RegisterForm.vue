@@ -39,7 +39,8 @@
                         <div class="md-layout-item md-small-size-100">
                             <md-field>
                                 <label> Password </label>
-                                <md-input v-model="password" type="password"></md-input>
+                                <md-input v-model="password" type="password" ></md-input>
+                                <span class="md-helper-text">Please use a safe one</span>
                             </md-field>
                         </div>
 
@@ -50,12 +51,14 @@
                             </md-field>
                         </div>
 
-                        <div>
-                            <md-button class="md-raised md-primary">Register</md-button>
-                        </div>
+                        
 
                     </div>
                 </md-card-content>
+
+                <md-card-actions>
+                    <md-button type="submit" class="md-raised md-primary" :disabled="sending">Create user</md-button>
+                </md-card-actions>
             </md-card>
         </form>
     </div>
